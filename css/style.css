@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --accent-color: #2294ed;
+    --secondary-text-color: #577592;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.8rem;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+.switch {
+    /* display: flex; */
+    justify-content: center;
+}
+
+.hover-link:hover {
+    background-color: var(--accent-color);
+}
+
+.primary-button {
+    background-color: rgb(119, 109, 247);
+    color: white;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+/* .top-img {
+    background-image: url("../images/bg-top.svg");
+    width: 200px;
+    height: 200px;
+
+} */
+
+.toggle {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+
+
+.price-area {
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.features-price {
+    flex-direction: column;
+    flex-basis: 20vw;
+    justify-content: space-around;
+    height: 70vh;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 2rem;
+}
+
+.professional {
+    background-color: rgb(119, 109, 247);
+    flex-basis: 30vw;
+    /* height: 70vh; */
+}
+
+.professional button {
+    background-color: white;
+    color: black;
+}
+
+.features-price h3 {
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+}
+
+.bottom-img {
+    background-image: url("../images/bg-bottom.svg");
+    width: 40vw;
+    height: 20vh;
+    background-repeat: no-repeat;
+}
+

@@ -1,35 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
 
-    <title>Pricing component</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="stylesheet" href="css/style.css">
+  <title>Pricing component</title>
+</head>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
-  </head>
-  <body>
-    Our Pricing Annually Monthly Basic &dollar;19.99 &dollar;199.99 500 GB
-    Storage 2 Users Allowed Send up to 3 GB Learn More Professional
-    &dollar;24.99 &dollar;249.99 1 TB Storage 5 Users Allowed Send up to 10 GB
-    Learn More Master &dollar;39.99 &dollar;399.99 2 TB Storage 10 Users Allowed
-    Send up to 20 GB Learn More
-  </body>
+<body>
+  <header>
+    <div class="top-img flex">
+    </div>
+    <div class="container flex">
+      
+      <div class="header1">
+        <h1>
+          Our Pricing
+        </h1>
+      </div>
+      <div class="switch flex">
+        <h3>Monthly</h3>
+        <div class="toggle-div">
+          <label class="toggle">
+            <input type="checkbox">
+            <span class="slider"></span>
+          </label>
+        </div>
+        <h3>Annually</h3>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="price-cards">
+      <div class="container">
+        <div class="price-area flex">
+
+          <div class="features-price basic flex">
+            <h2>Basic</h2>
+            <div class="content"></div>
+            <h1>&dollar;19.99</h1>
+            <br>
+            <h3>500 GB Storage</h3>
+            <h3>2 Users Allowed</h3>
+            <h3>Send up to 3GB</h3>
+            <button class="primary-button">Learn More</button>
+          </div>
+
+          <div class="features-price professional flex">
+            <h2>Professional</h2>
+            <h1>&dollar;24.99</h1>
+            <br>
+            <h3>1 TB Storage</h3>
+            <h3>5 Users Allowed</h3>
+            <h3>Send up to 10GB</h3>
+            <button class="primary-button">Learn More</button>
+          </div>
+
+          <div class="features-price master flex">
+            <h2>Master</h2>
+            <h1>&dollar;39.99</h1>
+            <br>
+            <h3>2 TB Storage</h3>
+            <h3>10 Users Allowed</h3>
+            <h3>Send up to 20GB</h3>
+            <button class="primary-button">Learn More</button>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="bottom-img">
+    </div>
+  </footer>
+
+</body>
+
 </html>
